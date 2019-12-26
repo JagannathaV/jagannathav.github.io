@@ -1,0 +1,41 @@
+---
+layout: not_homepage
+quote: I don’t have time for hobbies. At the end of the day, I treat my job as a hobby. It’s something I love doing.
+author: David Beckham
+---
+
+{% include quote.html quote=page.quote author=page.author %}
+
+<div class="container about_section">
+  <div class="row">
+    <img src="/assets/images/profile_picture.jpg" class="col m2 s3 responsive circle about_img" alt="me">
+    <div class="about_paragraph">
+      <p>
+        Hi, my name is Jagannatha and I'm an automation Engineer.
+  My first introduction to programming was during my engineering and learnt some of the programming languages.
+  I've started my first job as a software test engineer in a small startup company, here am solo engineer for automation testing.The environment thought me a lot.
+  Since then I've learned various programming languages.
+  Presently am working an MNC company and learning new technologies and applied on real time.
+  It's always gratifying to help and teach people as well as partaking in a rabbit hole with students because everyone asks different questions that would never occur to me.
+      </p>
+      <p>
+        I am now looking for my next adventure, so feel free to browse the <a class="about_me_links" href="/projects">projects</a> section to check out what I've built, <a class="about_me_links" href="/contact">shoot me an email</a> or connect on <a class="about_me_links" href="https://linkedin.com/in/jagannatha-mv-56639b7b">linkedIn</a>.
+      </p>
+    </div>
+  </div>
+  <h3 class="heading skills_heading center-align">Skills:</h3>
+  <div class="skills_wrapper">
+      {% for tech_group in site.data.skills %}
+        <div class="skill_group">
+          <div class="col m4 s6">
+            <h4 class="heading">{{tech_group.name}}:</h4>
+            <div class="skills">
+              {% for tech in tech_group.skills %}
+              <i class="about_skill_icon devicon-{{tech.class}}"></i><span class="skill_names">{{tech.skill_name}}</span><br/>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+</div>
