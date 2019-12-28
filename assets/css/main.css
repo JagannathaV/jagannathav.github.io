@@ -36,7 +36,7 @@
 .about__bkgrnd {
   background-image: url("../images/me.jpg"); }
 
-.projects__bkgrnd {
+.blog__bkgrnd {
   background-image: url("../images/projects.jpg"); }
 
 .algorithms__bkgrnd {
@@ -300,12 +300,12 @@
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
     transition: box-shadow 0.5s linear; }
-  #homepage .projects {
+  #homepage .blog {
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
     transition: box-shadow 0.5s linear;
     background-image: url("/assets/images/projects.jpg");
     background-size: cover; }
-  #homepage .projects:hover {
+  #homepage .blog:hover {
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
   #homepage .contact a {
     margin-left: 10px; }
@@ -376,41 +376,41 @@
   background-color: transparent;
   overflow-y: hidden !important; }
 
-#projects h3, .about-me h3, #algorithms h3 {
+#blog h3, .about-me h3, #algorithms h3 {
   font-family: 'Abril Fatface', cursive;
   font-weight: 600;
   letter-spacing: 1.2; }
-#projects .card-title, .about-me .card-title, #algorithms .card-title {
+#blog .card-title, .about-me .card-title, #algorithms .card-title {
   font-family: 'Abril Fatface', cursive;
   font-weight: 600;
   letter-spacing: 1.2; }
-#projects .hidden, .about-me .hidden, #algorithms .hidden {
+#blog .hidden, .about-me .hidden, #algorithms .hidden {
   display: none; }
-#projects .project-img, .about-me .project-img, #algorithms .project-img {
+#blog .project-img, .about-me .project-img, #algorithms .project-img {
   width: 500px;
   height: 300px; }
-#projects .project-wrapper, .about-me .project-wrapper, #algorithms .project-wrapper {
+#blog .project-wrapper, .about-me .project-wrapper, #algorithms .project-wrapper {
   width: 100%; }
-#projects .card, .about-me .card, #algorithms .card {
+#blog .card, .about-me .card, #algorithms .card {
   width: 31.3%;
   height: 520px;
   display: inline-block;
   float: left;
   margin: 1% 1% 1% 1%; }
-#projects .content, .about-me .content, #algorithms .content {
+#blog .content, .about-me .content, #algorithms .content {
   min-height: 100vh; }
 @media all and (max-width: 990px) {
-  #projects .card, .about-me .card, #algorithms .card {
+  #blog .card, .about-me .card, #algorithms .card {
     width: 48%; } }
 @media all and (max-width: 600px) {
-  #projects .card, .about-me .card, #algorithms .card {
+  #blog .card, .about-me .card, #algorithms .card {
     width: 98%;
     min-width: 320px;
     margin: 5% 1% 5% 1%; } }
-#projects .description, .about-me .description, #algorithms .description {
+#blog .description, .about-me .description, #algorithms .description {
   font-family: "Raleway", sans-serif;
   font-size: 1.1em; }
-#projects .about-me p, .about-me .about-me p, #algorithms .about-me p {
+#blog .about-me p, .about-me .about-me p, #algorithms .about-me p {
   color: white !important;
   margin: 4%;
   font-size: 25px;
@@ -436,7 +436,7 @@ nav {
   color: #8e5572;
   padding: 0 2% 0 2%; }
 
-.about-me p, .projects-paragraph {
+.about-me p, .blog-paragraph {
   margin: 4%;
   font-size: 25px;
   font-weight: 400;
@@ -444,7 +444,7 @@ nav {
   text-indent: 50px;
   font-family: "Raleway", sans-serif; }
 
-.projects-paragraph {
+.blog-paragraph {
   color: white; }
 
 .about-me li {
@@ -554,7 +554,7 @@ nav ul li a {
   font-weight: 600;
   color: black; }
 
-.projects_container {
+.blog_container {
   padding: 20px 10px 0 10px;
   width: 100%;
   margin: auto; }
@@ -593,7 +593,7 @@ nav ul li {
 
 .quote_box {
   padding: 0 5% 0 5%;
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
 
 .quote {
   font-size: 2rem;
@@ -642,7 +642,7 @@ nav ul li {
 .right-arrow {
   left: 500px; }
 
-.projects-bottom {
+.blog-bottom {
   margin-top: 50px; }
 
 .footer_titles {
@@ -847,7 +847,7 @@ button.fill:hover:before {
   top: 0;
   left: -1px; }
 
-.projects-border {
+.blog-border {
   bottom: 0;
   left: 0; }
 
@@ -932,4 +932,118 @@ nav a.button-collapse i {
   .about_section .skill_group {
     width: 50%; } }
 
+
+.education-block {
+  padding-top: 40px;
+  
+}
+
+/** 
+
+*/
+.section{
+    padding-left:10rem;
+    padding-right:10rem;
+}
+.section .block-header{
+ text-align:center;
+}
+/** Timeline */
+.timeline-header {
+  font-size: 16px;
+  text-align:right;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+  background: #18bc9c;
+  color: #FFF;
+  padding: 8px 15px;
+}
+
+.timeline {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  position: relative;
+  padding-top: 40px;
+}
+
+.timeline:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1px;
+  background: #18bc9c;
+}
+
+.timeline:after {
+  content: ' ';
+  clear: both;
+  display: table;
+}
+
+.timeline .timeline__item {
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.timeline .timeline__item__content {
+  position: relative;
+  display: block;
+  padding: 15px;
+  border: solid 1px #18bc9c;
+}
+
+.timeline .timeline__item__content:before {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  right: 100%;
+  height: 1px;
+  width: 40px;
+  background: #18bc9c;
+}
+
+.timeline .timeline__item__content:after {
+  content: ' ';
+  position: absolute;
+  top: 4px;
+  left: -46px;
+  height: 12px;
+  width: 12px;
+  background: #FFF;
+  border: solid 1px #18bc9c;
+  border-radius: 50%;
+}
+
+.timeline .timeline__item__content > h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.timeline .timeline__item__content > em {
+  font-size: 14px;
+  font-style: italic;
+  color: #808080;
+}
+
+.timeline .timeline__item__content > p {
+  font-size: 16px;
+  line-height: 1.8em;
+  margin: 0;
+  margin-top: 4px;
+  color: #404040;
+}
+
+.experience-block {
+  padding-top: 40px;
+}
 /*# sourceMappingURL=main.css.map */

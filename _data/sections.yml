@@ -1,9 +1,9 @@
-projects:
+blog:
   url: /blog
   heading: Blog
   words: A list of blog posts about technology and experiments
-  class: m7 projects
-  border: projects
+  class: m7 blog
+  border: blog
 about:
   url: /about
   heading: About Me
