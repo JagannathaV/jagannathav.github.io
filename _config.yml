@@ -23,8 +23,8 @@ about_me: >
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://JagannathaV.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 linked_in_link: "https://www.linkedin.com/in/jagannatha-mv-56639b7b"
-github_link: "https://www.github.com/JagannathaV"
-twitter_in_link: "Jagannatham66 "
+github_link: "https://github.com/psiservices-Jvenkataravanappa"
+twitter_in_link: "https://twitter.com/Jagannatham66"
 facebook_in_link: "https://www.facebook.com/Jagannatha.mv"
 
 google_analytics_id: ''
